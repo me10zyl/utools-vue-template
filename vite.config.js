@@ -14,8 +14,7 @@ export default defineConfig({
                     transform: (contents, filename) => contents.toString().replace('http://127.0.0.1:3000', 'index.html')
                 },
                 {src: 'preload.js', dest: 'dist/'},
-                {src: 'logo.png', dest: 'dist/'},
-                {src: 'node_modules/nodejs-websocket', dest: 'dist/node_modules'},
+                {src: 'logo.png', dest: 'dist/'}
             ],
             verbose: true,
             hook: 'writeBundle'
